@@ -1,0 +1,7 @@
+{
+	"recommendations": [
+    "redhat.vscode-yaml",
+    "asvetliakov.run-current-test",
+    "bysabi.prettier-vscode-standard"
+  ]
+}
