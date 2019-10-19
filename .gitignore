@@ -5,17 +5,30 @@
 # Dependency directory
 node_modules
 bower_components
+jspm_packages
+
+# Only keep yarn.lock in the root
+package-lock.json
+*/**/yarn.lock
 
 # Editors
 .idea
 *.iml
 
-# OS metadata
+# OSX
 .DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
 Thumbs.db
 
 # Ignore built ts files
-dist/**/*
+dist
 
 # Logging files
 *.log
+
+# Nuxt
+.nuxt*
+.cache
