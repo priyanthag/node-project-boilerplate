@@ -1,0 +1,50 @@
+{
+  "name": "react-boiler-plate",
+  "version": "1.0.0",
+  "description": "A react boiler plate",
+  "main": "src/index.js",
+  "author": "PriyanthaG",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --debug src/",
+    "lint:fix": "eslint --debug src/ --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage --colors",
+    "prettier": "prettier --write src/**/*.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.(js|jsx)": [
+      "npm run lint:fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/polyfill": "^7.0.0-beta.51",
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^8.2.3",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^8.0.0-beta.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jest": "^21.18.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "husky": "^1.1.2",
+    "jest": "^23.4.2",
+    "lint-staged": "^7.3.0",
+    "prettier": "^1.14.3"
+  }
+}
