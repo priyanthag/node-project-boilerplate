@@ -1,7 +1,17 @@
 {
-  "typeAcquisition": {
-      "include": [
-          "jest"
-      ]
-  }
+  "compilerOptions": {
+    // "module": "commonjs",
+    // "target": "es6",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"],
+      "~~/*": ["./*"],
+      "@@/*": ["./*"]
+    },
+  },
+  "exclude": ["node_modules", ".nuxt", "dist"]
+  // "exclude": ["node_modules"],
+  // "include": ["src/", "puppeteer/", "node_modules/jest/"],
 }
+
